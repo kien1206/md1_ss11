@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiểm tra số chẵn lẻ</title>
+</head>
+<body>
+    <script>
+    var num = prompt("Nhập vào một số bất kỳ:");
+    if (isNaN(num) || num.trim() === "") {
+        document.write("<h1>Giá trị không hợp lệ</h1>");
+    } else {
+        if (num % 2 == 0) {
+            document.write("<h1>Đây là số chẵn</h1>");
+        } else {
+            document.write("<h1>Đây là số lẻ</h1>");
+        }
+    }
+    </script>
+</body>
+</html>

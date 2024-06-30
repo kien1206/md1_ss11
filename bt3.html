@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hiển thị ngày trong tuần</title>
+</head>
+<body>
+    <script>
+        var num = prompt("Nhập vào một số (2-8):");
+
+        switch (num) {
+            case "2":
+                document.write("<h1>Monday</h1>");
+                break;
+            case "3":
+                document.write("<h1>Tuesday</h1>");
+                break;
+            case "4":
+                document.write("<h1>Wednesday</h1>");
+                break;
+            case "5":
+                document.write("<h1>Thursday</h1>");
+                break;
+            case "6":
+                document.write("<h1>Friday</h1>");
+                break;
+            case "7":
+                document.write("<h1>Saturday</h1>");
+                break;
+            case "8":
+                document.write("<h1>Sunday</h1>");
+                break;
+            default:
+                document.write("<h1>Giá trị không hợp lệ</h1>");
+                break;
+        }
+    </script>
+</body>
+</html>

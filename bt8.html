@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Số chia hết cho b từ 1 đến a</title>
+</head>
+<body>
+    <script>
+        var a = prompt("Nhập vào số nguyên dương a:");
+        var b = prompt("Nhập vào số nguyên dương b:");
+
+        // Chuyển đổi giá trị nhập vào thành số nguyên
+        a = parseInt(a);
+        b = parseInt(b);
+
+        if (a <= 0 || b <= 0 || isNaN(a) || isNaN(b)) {
+            console.log("Giá trị không hợp lệ.");
+        } else {
+            console.log("Các số chia hết cho " + b + " từ 1 đến " + a + ":");
+            for (var i = 1; i <= a; i++) {
+                if (i % b === 0) {
+                    console.log(i);
+                }
+            }
+        }
+    </script>
+</body>
+</html>

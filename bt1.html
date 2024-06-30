@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra năm sinh</title>
+    <script>
+        function calculateAge() {
+            var yearOfBirth = prompt("Bạn sinh năm bao nhiêu?");
+            if (!isNaN(yearOfBirth) && yearOfBirth.trim() !== "") {
+                var age = new Date().getFullYear() - parseInt(yearOfBirth);
+                alert("Số tuổi của bạn là: " + age);
+            } else {
+                alert("Giá trị không hợp lệ");
+            }
+        }
+    </script>
+</head>
+<body onload="calculateAge()">
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>In các số nguyên dương</title>
+</head>
+<body>
+    <script>
+        var num = prompt("Nhập vào một số nguyên dương:");
+
+        // Chuyển đổi giá trị nhập vào thành số nguyên
+        num = parseInt(num);
+
+        if (num <= 0 || isNaN(num)) {
+            console.log("Giá trị không hợp lệ.");
+        } else {
+            console.log("Các số nguyên dương từ 1 đến " + num + ":");
+            for (var i = 1; i <= num; i++) {
+                console.log(i);
+            }
+        }
+    </script>
+</body>
+</html>
